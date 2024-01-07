@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Settings</title>
+        <meta charset="utf-8">
+        <meta name="description" content="my first dashboard">
+        <meta name="copyright" content="kayed's company">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="mostafa kayed">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <!-- font awesome library -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- link css (styling sheet) -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="page">
+            <div class="side">
+                <h3>kayed</h3>
+                <ul>
+                    <li>
+                        <a  href="index.html"><i class="fa-regular fa-chart-bar fa-fw"></i> <span>Dashboard</span></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="active">
+                        <a href="settings.html"><i class="fa-solid fa-gear fa-fw"></i></i> <span>Settings</span></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="profile.html"><i class="fa-regular fa-user fa-fw"></i></i> <span>Profile</span></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="projects.html"><i class="fa-solid fa-diagram-project fa-fw"></i> <span>Projects</span></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="courses.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> <span>Courses</span></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="friends.html"><i class="fa-regular fa-circle-user fa-fw"></i> <span>Friends</span></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="files.html"><i class="fa-regular fa-file fa-fw"></i> <span>Files</span></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="plans.html"><i class="fa-regular fa-credit-card fa-fw"></i> <span>Plans</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="row1">
+                    <div class="search">
+                        <input type="text" placeholder="Type a keyword">
+                    </div>
+                    <div class="avatar">
+                        <span><i class="fa-regular fa-bell fa-lg"></i></span> <img src="imgs/avatar.png" alt="avatar" loading="lazy">
+                    </div>
+                </div>
+                <div class="row2 settings">
+                    <h1>Settings</h1>
+                    <div class="parent">
+                        <div class="box setting control">
+                            <h2>Site Control</h2>
+                            <p>Control The Website If There Is Maintenance</p>
+                            <div class="website-content">
+                                <div class="web-text">
+                                    <p>Website Control</p>
+                                    <p>Open/Close Website And Type The Reason</p>    
+                                </div>
+                                <label>
+                                    <input type="checkbox" class="toggle" checked>
+                                    <div class="toggle-swetch"></div>
+                                </label>
+                            </div>
+                            <textarea placeholder="close message content" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="box setting general">
+                            <h2>General Info</h2>
+                            <p>General Information About Your Account</p>
+                            <div class="inputs">
+                                <div>
+                                    <label for="first">First Name</label>
+                                    <input type="text " placeholder="First Name" id="first">
+                                </div>
+                                <div>
+                                    <label for="Last">Last Name</label>
+                                    <input type="text " placeholder="Last Name" id="Last">
+                                </div>
+                                <div>
+                                    <label for="Email">Email</label>
+                                    <div>
+                                        <input type="email" placeholder="m@k.mk" disabled id="Email">
+                                        <a href="#">Change</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box setting security">
+                            <h2>Security Info</h2>
+                            <p>Security Information About Your Account</p>
+                            <div class="content">
+                                <div>
+                                    <div>
+                                        <p>Password</p>
+                                        <p>Last Change On 25/10/2021</p>
+                                    </div>
+                                    <a href="#">Change</a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>Two-Factor Authentication</p>
+                                        <p>Enable/Disable The Feature</p>
+                                    </div>
+                                    <label>
+                                        <input type="checkbox" class="toggle" checked>
+                                        <div class="toggle-swetch"></div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>Devices</p>
+                                        <p>Check The Login Devices List</p>
+                                    </div>
+                                    <a href="#">Devices</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box setting social-info">
+                            <h2>Social Info</h2>
+                            <p>Social Media Information</p>
+                            <div class="social-info-content">
+                                <div>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <input type="text" placeholder="Twitter User Name">
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <input type="text" placeholder="Facebook User Name">
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                    <input type="text" placeholder="LinkedIn User Name">
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <input type="text" placeholder="Youtube User Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box setting wedgets">
+                            <h2>Widgets Control</h2>
+                            <p>Show/Hide Widgets</p>
+                            <div class="wedget-box">
+                                <label for="one"><input type="checkbox" id="one" checked> Quick Draft
+                                    <div></div>
+                                </label>
+                                <label for="two"><input type="checkbox" id="two" checked> Yearly Targets
+                                    <div></div>
+                                </label>
+                                <label for="three"><input type="checkbox" id="three" checked> Tickets Statistics
+                                    <div></div>
+                                </label>
+                                <label for="four"><input type="checkbox" id="four" checked> Latest News
+                                    <div></div>
+                                </label>
+                                <label for="five"><input type="checkbox" id="five" > Latest Tasks
+                                    <div></div>
+                                </label>
+                                <label for="six"><input type="checkbox" id="six" checked> Top Search Items
+                                    <div></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="box setting backup">
+                            <h2>Backup Manager</h2>
+                            <p>Control Backup Time And Location</p>
+                            <form action="#" method="get" class="form1">
+                                <div>
+                                    <input type="radio" name="backup" id="daily" checked>
+                                    <label for="daily">Daily</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="backup" id="weekly">
+                                    <label for="weekly">Weekly</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="backup" id="monthly">
+                                    <label for="monthly">Monthly</label>
+                                </div>
+                            </form>
+                            <form action="#" class="form2">
+                                    <label for="mega" >
+                                        <input type="radio" id="mega" name="host">
+                                        <div></div>
+                                        <i class="fa-solid fa-server d-block mb-10"></i>
+                                        <p>Megaman</p>
+                                    </label>
+                                    <label for="kayed" >
+                                        <input type="radio" id="kayed" name="host" checked>
+                                        <div></div>
+                                        <i class="fa-solid fa-server d-block mb-10"></i>
+                                        <p>Kayed</p>
+                                    </label>
+                                    <label for="sigma" >
+                                        <input type="radio" id="sigma" name="host">
+                                        <div></div>
+                                        <i class="fa-solid fa-server d-block mb-10"></i>
+                                        <p>Sigma</p>
+                                    </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
